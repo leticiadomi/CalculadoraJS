@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet"> <!-- link externo de arquivo CSS (que por algum motivo nunca funciona de primeira) -->
+
+    <title>Calculadorinha</title>
+
+</head>
+
+<body>
+    <div class = "fundo">
+
+        <div class = "calculadora">
+            <h1>Calculadora</h1> <!-- Título da calculadora, ou cabeçalho -->
+
+            <p id="resultado"></p>  <!-- Área do resultado -->
+
+            <table> <!-- Tabela da calculadora -->
+
+                <tr> <!-- Linha da tabela -->
+                    <td><button class="tecla">C</button></td> <!-- Table Data, ou conteúdo da célula -->
+                    <td><button class="tecla"><</button></td>
+                    <td><button class="tecla">/</button></td>
+                    <td><button class="tecla">x</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="tecla">7</button></td>
+                    <td><button class="tecla">8</button></td>
+                    <td><button class="tecla">9</button></td>
+                    <td><button class="tecla">-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="tecla">4</button></td>
+                    <td><button class="tecla">5</button></td>
+                    <td><button class="tecla">6</button></td>
+                    <td><button class="tecla">+</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="tecla">1</button></td>
+                    <td><button class="tecla">2</button></td>
+                    <td><button class="tecla">3</button></td>
+                    <td rowspan="2"><button class="tecla igual">=</button></td> <!-- rowspan expande o objeto para duas linhas -->
+                </tr>
+
+                <tr>
+                    <td colspan="2"><button class="tecla zero">0</button></td> <!-- colspan expande o objeto para duas colunas -->
+                    <td><button class="tecla">.</button></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
