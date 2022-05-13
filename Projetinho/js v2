@@ -1,0 +1,35 @@
+var resultado = "";
+
+function getResultado() {
+    resultado =  document.getElementById('resultado').innerHTML;
+}
+
+function setResultado(num) {
+    document.getElementById('resultado').innerHTML = num;
+}
+
+function insert(num)
+{
+    getResultado();
+    setResultado(resultado + num);
+}
+
+function clean()
+{
+    setResultado("");
+}
+
+function back()
+{
+    getResultado();
+    setResultado(resultado.substring(0, resultado.length - 1));
+}
+
+function calcular()
+{
+    getResultado();
+    if(resultado)
+    {
+        setResultado(eval(resultado));
+    }
+}
